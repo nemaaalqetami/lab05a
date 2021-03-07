@@ -14,7 +14,7 @@ function sum(a,b) { //eslint-disable-line
 
     arr.push(sum);
     arr.push('The sum of 4 and 7 is 11.');
-=======
+
    
       arr.push(sum);
       arr.push('The sum of 4 and 7 is 11.');
@@ -121,7 +121,7 @@ Test this function by hand in the console to get it working, and when you think 
 function multiplyArray(multArr) { //eslint-disable-line
 
    
-}
+
 
     let arr =[]; 
     let mul = multArr[0]*multArr[1]*multArr[2];
@@ -133,11 +133,11 @@ function multiplyArray(multArr) { //eslint-disable-line
    
     return mul ;
 
-
+ }
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
- }
+
 
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -167,7 +167,7 @@ var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
   
-}
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
  //testMultiplyAnyArray(testDynamicArray);
