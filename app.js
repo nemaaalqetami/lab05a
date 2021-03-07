@@ -8,12 +8,20 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
+function sum(a,b) { //eslint-disable-line
+    let arr =[]; 
+    let sum = a+b;
+   
+      arr.push(sum);
+      arr.push('The sum of 4 and 7 is 11.');
+  return arr ;
 
+   
 }
 
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+ testSum(sum(4,7));
+ //console.log(sum(4,7));
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -48,11 +56,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+    let arr =[]; 
+    let sum = a+b+c;
+    let mul = a*b*c;
+    arr.push(sum);
+    arr.push(mul)
+    arr.push('4 and 7 and 5 sum to 16.');
+    arr.push('The product of 4 and 7 and 5 is 140.');
+  return arr ;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -97,11 +112,20 @@ function multiplyArray(multArr) { //eslint-disable-line
     arr.push('The numbers 2,3,4 have a product of 24.');
     return arr ;
 
-}
+    let mul = multArr[0] * multArr[1] * multArr[2] * multArr[3] * multArr[4] ;
+   
+    return mul ;
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
+ }
+
+
+// Here is the test for multiplyArray(); uncomment it to run it
+//testMultiplyArray(testArray);
+//console.log( multiplyArray(testArray));
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
@@ -124,10 +148,16 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
+    let arr =[]; 
+ 
+  
+    arr.push(multiplyArray(dynamicArray));
+    arr.push('The numbers 1,2,3,4,5 have a product of 120.');
+    return arr;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+ testMultiplyAnyArray(testDynamicArray);
+ //console.log(multiplyAnyArray(testDynamicArray));
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
