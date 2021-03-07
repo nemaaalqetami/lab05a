@@ -11,9 +11,14 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a,b) { //eslint-disable-line
     let arr =[]; 
     let sum = a+b;
+
+    arr.push(sum);
+    arr.push('The sum of 4 and 7 is 11.');
+=======
    
       arr.push(sum);
       arr.push('The sum of 4 and 7 is 11.');
+
   return arr ;
 
    
@@ -35,11 +40,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+    let arr =[]; 
+    let mul = a*b;
+    arr.push(mul);
+    arr.push('The product of 5 and 9 is 45.');
+    return arr ;
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+ testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
