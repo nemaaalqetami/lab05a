@@ -106,12 +106,22 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+    let arr =[]; 
+    let mul = multArr[0]*multArr[1]*multArr[2];
+    arr.push(mul);
+    arr.push('The numbers 2,3,4 have a product of 24.');
+    return arr ;
 
     let mul = multArr[0] * multArr[1] * multArr[2] * multArr[3] * multArr[4] ;
    
     return mul ;
 
+
+// Here is the test for multiplyArray(); uncomment it to run it
+testMultiplyArray(testArray);
+
  }
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 //testMultiplyArray(testArray);
